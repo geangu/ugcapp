@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+
+        <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
+        <link type="text/css" rel="stylesheet" href="css/font-awesome.min.css"/>
+        <title>Universidad La Gran Colombia</title>
+        <style media="screen">
+            .button-collapse{
+                padding: 0 1em;
+            }
+            .brand-logo{
+                padding: 0 1em !important;
+            }
+            .caption{
+                background-color: rgba(0, 0, 0, 0.7) !important;
+                padding: 1em;
+                top: 15% !important;
+                left: 0 !important;
+                width: 100% !important;
+            }
+            .container{
+                margin-top: 2em;
+            }
+            .side-nav>li>a{
+                color: #fafafa;
+            }
+        </style>
+    </head>
+
+    <body class="grey darken-4">
+
+        <div class="navbar-fixed">
+            <nav class="green darken-3">
+
+                <a href="#" class="brand-logo">UGC</a>
+
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#!">First Sidebar Link</a></li>
+                    <li><a href="#!">Second Sidebar Link</a></li>
+                </ul>
+
+                <ul id="slide-out" class="side-nav grey darken-4">
+                    <li><a href="#!">Universidad</a></li>
+                    <li><a href="#!">Facultades</a></li>
+                    <li><a href="#!">Admisiones</a></li>
+                    <li><a href="#!">Inscripción</a></li>
+                    <li><a href="#!">Servicios</a></li>
+                    <li><a href="#!">Aplicaciones</a></li>
+                </ul>
+
+                <a href="#" data-activates="slide-out" class="button-collapse">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </a>
+
+            </nav>
+        </div>
+
+
+        <div class="container">
+            <img class="responsive-img" src="img/content_main.png">
+        </div>
+
+        <div class="container">
+            <div class="slider">
+                <ul class="slides">
+                    <li>
+                        <img src="img/slider/01.jpg" />
+                        <div class="caption center-align">
+                            <h3>8° Encuentro de Egresados</h3>
+                            <h5 class="light grey-text text-lighten-3">
+                                Facultad Ciencias de la educación.
+                            </h5>
+                            <a href="" class="waves-effect waves-light btn">Inscribase</a>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/slider/01.jpg" />
+                        <div class="caption center-align">
+                            <h3>8° Encuentro de Egresados</h3>
+                            <h5 class="light grey-text text-lighten-3">
+                                Facultad Ciencias de la educación.
+                            </h5>
+                            <a href="" class="waves-effect waves-light btn">Inscribase</a>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/slider/01.jpg" />
+                        <div class="caption center-align">
+                            <h3>8° Encuentro de Egresados</h3>
+                            <h5 class="light grey-text text-lighten-3">
+                                Facultad Ciencias de la educación.
+                            </h5>
+                            <a href="" class="waves-effect waves-light btn">Inscribase</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+        <!-- <script type="text/javascript" src="cordova.js"></script> -->
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+            $(".button-collapse").sideNav();
+            $('.slider').slider();
+        </script>
+    </body>
+</html>
